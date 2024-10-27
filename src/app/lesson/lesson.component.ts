@@ -6,8 +6,9 @@ import {Lesson} from '../model/lesson';
   templateUrl: './lesson.component.html',
   styleUrls: ['./lesson.component.css']
 })
-export class LessonComponent implements OnInit {
+export class LessonComponent  {
 
+<<<<<<< HEAD
   @Input()
   lesson:Lesson;
 
@@ -16,5 +17,7 @@ export class LessonComponent implements OnInit {
   ngOnInit() {
 
   }
+=======
+>>>>>>> 1-start
 
 }

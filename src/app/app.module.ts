@@ -48,8 +48,12 @@ import {MessagesService} from './messages/messages.service';
         SafeUrlPipe,
         MessagesComponent,
         SearchLessonsComponent,
+<<<<<<< HEAD
         LoadingComponent,
         CoursesCardListComponent
+=======
+        LoadingComponent
+>>>>>>> 1-start
     ],
     bootstrap: [AppComponent], imports: [BrowserModule,
         BrowserAnimationsModule,
@@ -72,8 +76,11 @@ import {MessagesService} from './messages/messages.service';
         MatDatepickerModule,
         MatMomentDateModule,
         ReactiveFormsModule], providers: [
+<<<<<<< HEAD
         LoadingService,
         MessagesService,
+=======
+>>>>>>> 1-start
         provideHttpClient(withInterceptorsFromDi())
     ] })
 export class AppModule {

@@ -3,9 +3,13 @@ import { MAT_DIALOG_DATA, MatDialogRef } from "@angular/material/dialog";
 import {Course} from "../model/course";
 import {FormBuilder, Validators, FormGroup} from "@angular/forms";
 import moment from 'moment';
+<<<<<<< HEAD
 import {CoursesService} from '../services/courses.service';
 import {LoadingService} from '../loading/loading.service';
 import {MessagesService} from '../messages/messages.service';
+=======
+import {catchError} from 'rxjs/operators';
+>>>>>>> 1-start
 import {throwError} from 'rxjs';
 import {catchError} from 'rxjs/operators';
 import {CoursesStore} from '../services/courses.store';

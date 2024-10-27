@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {Injectable} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {Course} from '../model/course';
@@ -63,10 +64,38 @@ export class CoursesService {
                 map(res => res["payload"]),
                 shareReplay()
             );
+=======
+import {
+    HttpClient
+}
+from '@angular/common/http';
+import {
+    Injectable
+}
+from '@angular/core';
+import { Course } from '../model/course';
+import { Observable } from 'rxjs';
+import { map, shareReplay } from 'rxjs/operators';
+
+@Injectable({ providedIn: 'root' }) export class CourseService {
+
+    constructor(private readonly http: HttpClient) {}
+
+
+    loadAllCourses(): Observable<Course[]> {
+        return this.http.get<Course[]>('/api/courses')
+        .pipe(
+            map((res)=> {
+               return res['payload']
+            }),
+            shareReplay()
+        )
+>>>>>>> 1-start
     }
 
 
 }
+<<<<<<< HEAD
 
 
 
@@ -74,3 +103,5 @@ export class CoursesService {
 
 
 
+=======
+>>>>>>> 1-start
