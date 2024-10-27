@@ -1,6 +1,5 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {
-  
   concat,
   fromEvent,
   interval,
